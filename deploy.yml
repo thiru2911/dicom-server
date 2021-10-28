@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: penchedicom
+spec:
+  selector:
+    app: penchedicom
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: penchedicom
+  labels:
+    app: penchedicom
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: penchedicom
+  template:
+    metadata:
+      labels:
+        app: penchedicom
+    spec:
+      containers:
+      - name: penchedicom
+        image: action0692/penchedicom:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: DicomFunctions__BaseAddress
+          value: https://penchedicomk8s2-functions.azurewebsites.net/api/
+        - name: DicomFunctions__FunctionAccessKey
+          value: pBDk42yeJBXWC1oPW2yOTqUogRAvJ5ySknuf2kkqwC5tFbPZq5dTpQ==
