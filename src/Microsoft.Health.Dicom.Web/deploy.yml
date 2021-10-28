@@ -34,6 +34,6 @@ spec:
         - containerPort: 80
         env:
         - name: DicomFunctions__BaseAddress
-          value: https://penchedicomk8s2-functions.azurewebsites.net/api/
+          value: http://20.80.137.28/api/
         - name: DicomFunctions__FunctionAccessKey
-          value: pBDk42yeJBXWC1oPW2yOTqUogRAvJ5ySknuf2kkqwC5tFbPZq5dTpQ==
+          value: v6z/0EDTsto3wJUTZoklbKgJaa56c3RryWpyom50tZXy7G2G8eBr8g==
