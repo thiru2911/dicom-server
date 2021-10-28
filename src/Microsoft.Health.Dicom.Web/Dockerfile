@@ -31,3 +31,8 @@ FROM runtime AS dicom-server
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Microsoft.Health.Dicom.Web.dll"]
+
+ENV ApplicationInsights__InstrumentationKey="f91831d6-a007-4c77-b613-c9c90f7e4a74"
+ENV BlobStore__ConnectionString="DefaultEndpointsProtocol=https;AccountName=penchedicom5dw3uulea5cww;AccountKey=6jnJ8bVEHNdDE4ftNMix2HbIb//ELXivRRYaoO0a2Nqn7Gw4pxNAGz/6f0AGHBIlULeGq7qCU49PRjmOXU86eA==;"
+ENV DicomServer__Features__EnableExtendedQueryTags="True"
+ENV SqlServer__ConnectionString="Server=tcp:penchedicomk8s2.database.windows.net,1433;Initial Catalog=Dicom;Persist Security Info=False;User ID=dicomAdmin;Password=jUI&*p)_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
