@@ -34,6 +34,6 @@ spec:
         - containerPort: 80
         env:
         - name: DicomFunctions__BaseAddress
-          value: http://20.80.137.28/api/
+          value: http://20.69.149.225/api/
         - name: DicomFunctions__FunctionAccessKey
           value: v6z/0EDTsto3wJUTZoklbKgJaa56c3RryWpyom50tZXy7G2G8eBr8g==
