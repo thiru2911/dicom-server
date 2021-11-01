@@ -13,9 +13,6 @@ data:
   host.master: U1Qya1p1SUJOZ3d6ZzBBbkxzRTJodTdqbndVL2lLZEJhMFI0R3NDczh4ajUybWtIYjVPOUJRPT0=
   host.function.default: djZ6LzBFRFRzdG8zd0pVVFpva2xiS2dKYWE1NmMzUnJ5V3B5b201MHRaWHk3RzJHOGVCcjhnPT0=
   host.systemKey.default: YnptS0ppQkEzSG4zNW02YWxZQjhQSHQ1czF3Wk96Z09XYXBPRHZvTUdtTUtSeXROWHUyaC9nPT0=
-  functions.penchtest.default: M3ZneU9zQWdjakRRSEpNU1E3NDNQUTF4LzJ5T3VXaXJQNDc5ZlFVa1NLbWFxSFVnSFIvOG9nPT0=
-  functions.getstatusasync.default: U2RJamUzU1BIdzV2UFFydlRSdnhjME1yc1kybnI5ajNTYktiTHVqM2JsYUJnOExtSmhlVXlBPT0=
-  functions.startreindexinginstancesasync.default: NGp6YXpZeHFGdjJaNnRnRjdpSW8wVzNNTm4wOE93bmJNVzlhUndyTmtUOFJWaWx4YTQ2eGNnPT0=
 apiVersion: v1
 kind: Secret
 metadata:
